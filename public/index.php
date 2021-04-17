@@ -1,6 +1,10 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
+$whoops = new \Whoops\Run;
+$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+$whoops->register();
+
 $psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
 
 $creator = new \Nyholm\Psr7Server\ServerRequestCreator(
@@ -12,4 +16,4 @@ $creator = new \Nyholm\Psr7Server\ServerRequestCreator(
 
 $serverRequest = $creator->fromGlobals();
 
-var_dump($serverRequest->getUri());
+dd($serverRequest->getUri());
