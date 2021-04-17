@@ -37,6 +37,10 @@ class ComposerStaticInit1ad063652e93d41526913a4956699718
         array (
             'Http\\Message\\' => 13,
         ),
+        'B' => 
+        array (
+            'Bamarni\\Composer\\Bin\\' => 21,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -76,6 +80,10 @@ class ComposerStaticInit1ad063652e93d41526913a4956699718
         'Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-http/message-factory/src',
+        ),
+        'Bamarni\\Composer\\Bin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bamarni/composer-bin-plugin/src',
         ),
     );
 
