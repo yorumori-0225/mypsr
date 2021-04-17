@@ -1,3 +1,4 @@
 vender
 vendor-bin/
 composer.phar
+.php_cs.cache
