@@ -9,10 +9,15 @@ class ComposerStaticInit1ad063652e93d41526913a4956699718
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
+        '7e9bd612cc444b3eed788ebbe46263a0' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/autoload.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'y' => 
+        array (
+            'yorumori\\MyPsr\\' => 15,
+        ),
         'W' => 
         array (
             'Whoops\\' => 7,
@@ -26,12 +31,18 @@ class ComposerStaticInit1ad063652e93d41526913a4956699718
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
         ),
         'N' => 
         array (
             'Nyholm\\Psr7\\' => 12,
             'Nyholm\\Psr7Server\\' => 18,
+        ),
+        'L' => 
+        array (
+            'Laminas\\ZendFrameworkBridge\\' => 28,
+            'Laminas\\HttpHandlerRunner\\' => 26,
         ),
         'H' => 
         array (
@@ -44,6 +55,10 @@ class ComposerStaticInit1ad063652e93d41526913a4956699718
     );
 
     public static $prefixDirsPsr4 = array (
+        'yorumori\\MyPsr\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Whoops\\' => 
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
@@ -64,6 +79,10 @@ class ComposerStaticInit1ad063652e93d41526913a4956699718
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Psr\\Http\\Server\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-server-handler/src',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
@@ -76,6 +95,14 @@ class ComposerStaticInit1ad063652e93d41526913a4956699718
         'Nyholm\\Psr7Server\\' => 
         array (
             0 => __DIR__ . '/..' . '/nyholm/psr7-server/src',
+        ),
+        'Laminas\\ZendFrameworkBridge\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src',
+        ),
+        'Laminas\\HttpHandlerRunner\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-httphandlerrunner/src',
         ),
         'Http\\Message\\' => 
         array (
